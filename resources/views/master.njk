@@ -13,6 +13,30 @@
   <section>
     <div class="app">
       <div class="app__main">
+        {% if old('error') %}
+          <div class="container">
+            <div class="row">
+              <div class="row__col row__col--1-1">
+                <p class="alert alert--warning">
+                  Warning: {{ old('error') }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if old('success') %}
+          <div class="container">
+            <div class="row">
+              <div class="row__col row__col--1-1">
+                <p class="alert alert--success">
+                  Warning: {{ old('success') }}
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
         {% block content %}
         {% endblock %}
       </div>

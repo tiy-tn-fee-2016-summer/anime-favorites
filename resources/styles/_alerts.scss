@@ -1,0 +1,19 @@
+.alert {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border: $c-gray 0.1rem solid;
+  border-radius: 0.4rem;
+  background: rgba($c-gray, 0.6);
+  color: $c-pure-white;
+  font-weight: normal;
+
+  &--success {
+    border-color: $c-light;
+    background: rgba($c-light, 0.6);
+  }
+
+  &--warning {
+    border-color: $c-accent;
+    background: rgba($c-accent, 0.6);
+  }
+}

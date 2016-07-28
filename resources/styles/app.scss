@@ -3,6 +3,8 @@ $c-light: #2980b9;
 $c-brite: #3498db;
 $c-accent: #e74c3c;
 $c-white: #ecf0f1;
+$c-bg: lighten($c-white, 5%);
+$c-pure-white: #fff;
 $c-gray: desaturate(darken($c-white, 45%), 10%);
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
@@ -36,3 +38,4 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'footer';
 @import 'form';
 @import 'btn';
+@import 'alerts';

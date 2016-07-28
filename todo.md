@@ -1,9 +1,17 @@
 # Todos
 
+Styles
+  - [ ] Nav Bar
+  - [X] Forms
+  - [X] Buttons
+  - [X] Footer
+  - [ ] Grid
+  - [X] Alerts
+
 User can...
 
 - [ ] Register with Email and Password
-  - [ ] Error Message
+  - [X] Error Message
   - [ ] Create User
   - [ ] Success Redirect to Login
 - [ ] Login with Email and Password
