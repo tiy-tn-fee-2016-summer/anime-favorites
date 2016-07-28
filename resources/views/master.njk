@@ -19,9 +19,14 @@
               <a href="/">Anime Favorites</a>
             </li>
             <li class="top-nav__group">
-              <a href="/login">Login</a>
-              <a href="/signup">Sign Up</a>
-              <a href="">{{ currentUser }}</a>
+              {% if currentUser %}
+                <p>Hello {{ currentUser.email }}</p>
+                <a href="/shows">Shows</a>
+                <a href="/logout">Logout</a>
+              {% else %}
+                <a href="/login">Login</a>
+                <a href="/signup">Sign Up</a>
+              {% endif %}
             </li>
           </ul>
         </div>
