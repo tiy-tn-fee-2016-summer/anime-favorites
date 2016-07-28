@@ -10,14 +10,14 @@ Styles
 
 User can...
 
-- [ ] Register with Email and Password
+- [X] Register with Email and Password
   - [X] Error Message
-  - [ ] Create User
-  - [ ] Success Redirect to Login
-- [ ] Login with Email and Password
-  - [ ] Error Message
-  - [ ] Login Attempt
-  - [ ] Success Redirect to Shows
+  - [X] Create User
+  - [X] Success Redirect to Login
+- [X] Login with Email and Password
+  - [X] Error Message
+  - [X] Login Attempt
+  - [X] Success Redirect to Shows
 - [ ] Shows List
   - [ ] See show title
   - [ ] See show is favorited
