@@ -10,5 +10,16 @@
         New Show
       </a>
     </div>
+
+    <div class="row">
+      {% for show in shows %}
+        <div class="row__item--1-4">
+          <div class="card">
+            <h4>{{ show.title }}</h4>
+            <p>listed by: {{ show.user.email }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </div>
 {% endblock %}

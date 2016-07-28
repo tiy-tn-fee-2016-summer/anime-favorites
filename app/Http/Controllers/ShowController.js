@@ -5,7 +5,9 @@ const Show = use('App/Model/Show');
 class ShowController {
 
   * index(request, response) {
-    yield response.sendView('show.index');
+    const shows = yield Show.with('user').fetch();
+
+    yield response.sendView('show.index', { shows: shows.toJSON() });
   }
 
   * create(request, response) {
