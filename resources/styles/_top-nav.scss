@@ -1,0 +1,34 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    margin: 0 (-1rem);
+
+    line-height: 2rem;
+
+    a {
+      padding: 1rem;
+
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        background: $c-brite;
+      }
+    }
+
+    &--brand {
+      font-size: 1.4rem;
+      font-weight: normal;
+
+      a:hover {
+        background: none;
+      }
+    }
+  }
+}

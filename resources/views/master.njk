@@ -12,6 +12,19 @@
 
   <section>
     <div class="app">
+      <nav class="app__nav">
+        <div class="container">
+          <ul class="top-nav">
+            <li class="top-nav__group top-nav__group--brand">
+              <a href="/">Anime Favorites</a>
+            </li>
+            <li class="top-nav__group">
+              <a href="/login">Login</a>
+              <a href="/signup">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div class="app__main">
         {% if old('error') %}
           <div class="container">

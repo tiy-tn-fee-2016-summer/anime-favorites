@@ -10,12 +10,18 @@ $c-gray: desaturate(darken($c-white, 45%), 10%);
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
-@import 'adonis';
+@import 'base';
 
 .app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+
+  &__nav {
+    padding: 0 1rem;
+    background: $c-dark;
+    color: $c-white;
+  }
 
   &__main {
     flex-grow: 1;
@@ -39,3 +45,4 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'form';
 @import 'btn';
 @import 'alerts';
+@import 'top-nav';
