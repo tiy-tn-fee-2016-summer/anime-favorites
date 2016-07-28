@@ -46,3 +46,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'btn';
 @import 'alerts';
 @import 'top-nav';
+
+.resource-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

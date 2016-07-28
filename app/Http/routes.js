@@ -25,3 +25,7 @@ Route.post('/signup', 'UserController.store');
 Route.get('/login', 'SessionController.create');
 Route.post('/login', 'SessionController.store');
 Route.any('/logout', 'SessionController.destroy');
+
+Route.group('logged-in', () => {
+  Route.resource('/shows', 'ShowController');
+}).middleware('auth');

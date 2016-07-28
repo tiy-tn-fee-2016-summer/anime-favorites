@@ -1,7 +1,7 @@
 # Todos
 
 Styles
-  - [ ] Nav Bar
+  - [X] Nav Bar
   - [X] Forms
   - [X] Buttons
   - [X] Footer
@@ -25,6 +25,7 @@ User can...
 - [ ] Show Create Form
   - [ ] Create show for currently logged in user
   - [ ] Success message
+- [ ] Navbar shows login vs logout based on if a user is logged in
 
 
 ## Models
@@ -38,5 +39,5 @@ Show
 - title:string
 - ep_time:integer
 - num_ep:integer
-- movie:boolean
+- is_movie:boolean
 - user:belongsTo('User')

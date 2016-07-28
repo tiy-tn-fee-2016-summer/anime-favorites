@@ -1,0 +1,35 @@
+{% extends "master" %}
+
+{% block content %}
+  <div class="container">
+    <form action="/shows" method="POST">
+      {{ csrfField }}
+      <h2>List a new show!</h2>
+
+      <div class="form-field">
+        <label for="title" class="form-field__label">Title:</label>
+        <input class="form-field__input" type="text" name="title" id="title" value="{{ old('title') }}">
+      </div>
+
+      <div class="form-field">
+        <label for="ep_time" class="form-field__label">Running Time:</label>
+        <input class="form-field__input" type="number" name="ep_time" id="ep_time" value="{{ old('ep_time') }}">
+      </div>
+
+      <div class="form-field">
+        <label for="num_ep" class="form-field__label">Total Number of Episodes:</label>
+        <input class="form-field__input" type="number" name="num_ep" id="num_ep" value="{{ old('num_ep') }}">
+      </div>
+
+      <div class="form-field">
+        <label for="is_movie" class="form-field__label">Is this a Movie:</label>
+        <input class="form-field__input" type="checkbox" name="is_movie" id="is_movie" {% if old('is_movie') %}checked{% endif %}>
+      </div>
+
+      <div class="form-actions">
+        <a href="/shows" class="btn btn--back">Back</a>
+        <button class="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
