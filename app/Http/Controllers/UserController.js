@@ -13,7 +13,7 @@ class UserController {
     const { email, password } = request.all();
     // Attempt to create a user
     try {
-      yield User.create({ email, password: Hash.make(password) });
+      yield User.create({ email, password: yield Hash.make(password) });
 
       // Send success message
       yield request.with({ success: 'User created!' })
