@@ -1,0 +1,29 @@
+.form-field {
+  margin: 1rem 0;
+
+  &__label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 0.1rem $c-gray solid;
+    border-radius: 0.4rem;
+    outline: none;
+
+    font-size: 1rem;
+
+    &:focus {
+      border-color: $c-light;
+      color: $c-light;
+    }
+  }
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}

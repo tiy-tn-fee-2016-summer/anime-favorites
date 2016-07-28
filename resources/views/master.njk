@@ -11,21 +11,23 @@
 <body>
 
   <section>
-    <div class="__wrapper">
-      {% block content %}
-      {% endblock %}
+    <div class="app">
+      <div class="app__main">
+        {% block content %}
+        {% endblock %}
+      </div>
 
       {% block footer %}
-        <div class="__footer">
-          <ul>
-            <li>
-              <a href="https://twitter.com/intent/tweet?url=http://adonisjs.com&text=I am using AdonisJs, a practical MVC framework for nodejs&hashtags=nodejs,adonisframework" target="_blank"><img src="/assets/twitter.svg"></a>
-            </li>
-            <li>
-              <a href="https://github.com/adonisjs/adonis-framework" target="_blank"><img src="/assets/github.svg"></a>
-            </li>
-          </ul>
-        </div>
+      <div class="app__footer">
+        <ul class="footer-links">
+          <li>
+            <a href="https://twitter.com/intent/tweet?url=http://adonisjs.com&text=I am using AdonisJs, a practical MVC framework for nodejs&hashtags=nodejs,adonisframework" target="_blank"><img src="/assets/twitter.svg"></a>
+          </li>
+          <li>
+            <a href="https://github.com/adonisjs/adonis-framework" target="_blank"><img src="/assets/github.svg"></a>
+          </li>
+        </ul>
+      </div>
       {% endblock %}
     </div><!-- end wrapper -->
   </section>

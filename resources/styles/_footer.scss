@@ -1,0 +1,28 @@
+.footer-links {
+  display: table;
+  margin: 1rem 0;
+
+  li {
+    display: table-cell;
+    border-left: solid 2px #ccc;
+
+    &:first-child {
+      border: 0;
+    }
+
+    a {
+      display: inline-block;
+      padding: 0 2rem;
+      transition: opacity 0.5s;
+      color: #ccc;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

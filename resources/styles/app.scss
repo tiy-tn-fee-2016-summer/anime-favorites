@@ -1,7 +1,38 @@
-// @import 'yoga';
-// @import 'normalize';
+$c-dark: #2c3e50;
+$c-light: #2980b9;
+$c-brite: #3498db;
+$c-accent: #e74c3c;
+$c-white: #ecf0f1;
+$c-gray: desaturate(darken($c-white, 45%), 10%);
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
 @import 'box-sizing';
 @import 'adonis';
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__main {
+    flex-grow: 1;
+    padding: 1rem;
+  }
+
+  &__footer {
+    margin: auto;
+
+    text-align: center;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+@import 'footer';
+@import 'form';
+@import 'btn';

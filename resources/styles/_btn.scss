@@ -1,0 +1,19 @@
+.btn {
+  padding: 0.5rem;
+
+  border: 0;
+  border-radius: 0.4rem;
+  outline: 0;
+
+  background: $c-light;
+
+  color: $c-white;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  text-decoration: none;
+
+  &--back {
+    background: $c-gray;
+  }
+}

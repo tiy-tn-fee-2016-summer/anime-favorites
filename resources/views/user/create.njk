@@ -1,0 +1,25 @@
+{% extends "master" %}
+
+{% block content %}
+  <div class="container">
+    <form action="/signup" method="POST">
+      {{ csrfField }}
+      <h2>Sign Up For a New Account!</h2>
+
+      <div class="form-field">
+        <label for="email" class="form-field__label">Email:</label>
+        <input class="form-field__input" type="text" name="email" id="email">
+      </div>
+
+      <div class="form-field">
+        <label for="password" class="form-field__label">Password:</label>
+        <input class="form-field__input" type="password" name="password" id="password">
+      </div>
+
+      <div class="form-actions">
+        <a href="/login" class="btn btn--back">Login</a>
+        <button class="btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+{% endblock %}
